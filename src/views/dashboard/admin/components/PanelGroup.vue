@@ -9,7 +9,7 @@
           <div class="card-panel-text">
             服务数
           </div>
-          <count-to :start-val="0" :end-val="appNum" :duration="2600" class="card-panel-num" />
+          <count-to :start-val="0" :end-val="serviceNum" :duration="2600" class="card-panel-num" />
         </div>
       </div>
     </el-col>
@@ -48,7 +48,7 @@
           <div class="card-panel-text">
             租户数
           </div>
-          <count-to :start-val="0" :end-val="serviceNum" :duration="3600" class="card-panel-num" />
+          <count-to :start-val="0" :end-val="appNum" :duration="3600" class="card-panel-num" />
         </div>
       </div>
     </el-col>
