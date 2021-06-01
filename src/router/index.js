@@ -205,7 +205,7 @@ export const constantRoutes = [
         hidden: true
       },
       {
-        path: 'app_stat/:id(\\d+)',
+        path: 'stat/:id(\\d+)',
         component: () => import('@/views/app/stat'),
         name: 'AppStat',
         meta: { title: '租户流量统计', noCache: true },

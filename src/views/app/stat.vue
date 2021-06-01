@@ -6,7 +6,7 @@
 
 <script>
 import Chart from '@/components/Charts/LineStat'
-import { serviceStat, serviceDetail } from '@/api/service'
+import { appStat, appDetail } from '@/api/app'
 export default {
   name: 'ServiceStat',
   components: { Chart },
@@ -26,10 +26,10 @@ export default {
   methods: {
     fetchStat(id) {
       const query = { 'id': id }
-      serviceStat(query).then(response1 => {
-        serviceDetail(query).then(response2 => {
+      appStat(query).then(response1 => {
+        appDetail(query).then(response2 => {
           this.chartData = {
-            'title': response2.data.info.service_name + '服务统计',
+            'title': response2.data.name + ' 租户统计',
             'today': response1.data.today,
             'yesterday': response1.data.yesterday
           }
